@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     //PROBLEMA
@@ -6,10 +7,19 @@
     */
 
     //ENTRADA
+    let n1 = prompt("Coloque um numero inteiro:")
+    let n2 = prompt("Coloque outro numero inteiro:")
+    const num2 = n1
+    const num1 = num2
 
     //PROCESSAMENTO
 
     //SAÍDA
-
+    if (isNaN(num1)|| isNaN(num2)){
+        alert("Algum dos algarismos não é um número!!")
+    }
+    else{
+        alert(`O valor novo do primeiro número é ${num1}, e do segundo número é ${num2}`)
+    }
     
 </script>
