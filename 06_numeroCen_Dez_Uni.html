@@ -12,12 +12,33 @@
     */
 
     //ENTRADA
-
+    const num = prompt("Digite um numero inteiro maior que 0 e menor que 1000 ").trim
 
     //PROCESSAMENTO
 
     
     //SAÍDA
-
+    if( num<1 || num>1000){
+        alert("Valor invalido")
+    }
+    else if(isNaN(num)){
+        alert("Coloque apenas numeros!!")
+    }
+    else{
+        var centena = (num / 100).toFixed(0)
+        var dezenas = (num%100).toFixed(0)
+        var dezena = (dezena / 10).toFixed(0)
+        var unidades = (dezenas%10).toFixed(0)
+        if (num>99){
+            alert(`${centena} centenas, ${dezena} dezenas, ${unidades} unidades`)
+        }
+        else if(num<9 && num>100){
+            alert(`${dezena} dezenas, ${unidades} unidades`)    
+        }
+        else{
+            alert(`${unidades} unidades`)
+        }
+    }
 
 </script>
+        

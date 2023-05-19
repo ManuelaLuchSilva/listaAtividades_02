@@ -6,23 +6,22 @@
     */
 
     //ENTRADA
-    let num = Number(prompt("Informe um numero inteiro:")).toFixed(1).trim
-    
-    
+    var n = prompt("Digite um numero inteiro");
+    var total = n/2;
+
     //PROCESSAMENTO
     
     
-    //SAÍDA
-    if (!isNaN){
-        if(num/2==0){
-            alert("É par")
+    //SAÍDA 
+    if(!isNaN(n)){
+        if(n%2==0){
+            alert("Par");
+        } else {
+            alert("Impar");
         }
-        else{
-            alert("É impar")
-        }
-    }
+    } 
     else{
-        alert("Informe um número")
+        alert("Digite um numero!!")
     }
     
 </script>
