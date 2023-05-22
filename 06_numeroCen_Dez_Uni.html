@@ -21,10 +21,7 @@
     if( num<1 || num>1000){
         alert("Valor invalido")
     }
-    else if(isNaN(num)){
-        alert("Coloque apenas numeros!!")
-    }
-    else{
+    else if (!isNaN(num) && num>0  && num<1000){
         var centena = (num / 100).toFixed(0)
         var dezenas = (num%100).toFixed(0)
         var dezena = (dezena / 10).toFixed(0)
@@ -38,6 +35,9 @@
         else{
             alert(`${unidades} unidades`)
         }
+    }
+    else{
+        alert("Coloque apenas numeros")
     }
 
 </script>

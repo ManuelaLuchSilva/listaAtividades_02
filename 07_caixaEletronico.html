@@ -9,10 +9,35 @@
     */
     //0,5 na prova: Eduardo de Oliveira
     //ENTRADA
-
+    const num = prompt("Qual o valor do saque?").trim
     
     //PROCESSAMENTO
+    let cem = Number(num/100)
+    let restoCem = num-(num%100)
+
+    let cinquenta = Number(restoCem/50)
+    let restoCinquenta = restoCem-(restoCem%50)
+
+    let dez = Number(restoCinquenta/10)
+    let restoDez = restoCinquenta-(restoCinquenta%10)
+
+    let cinco = Number(restoDez/5)
+    restoCinco = restoDez-(restoDez%5)
+
+    let unidade = restoCinco
 
     //SAÍDA
+    if (num<10||num>600){
+        alert("Valor fora dos limites!")    
+    }
+    else if (!isNaN(num)&&num>10&&num<600){
+        if(cem>0){
+            alert(`${cem} notas de cem, ${cinquenta} notas de cinquenta, ${dez} notas de dez, ${cinco} notas de cinco e ${unidade} notas de um`)
+        }
+    }
+    else {
+        alert("Coloque numeros")
+    }
+
 
 </script>

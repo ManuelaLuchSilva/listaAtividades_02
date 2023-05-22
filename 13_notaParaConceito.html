@@ -9,10 +9,26 @@
     // Entre 5.9 e zero            E
 
     // Entrada
-
+    const nota = prompt("Qual foi sua nota").trim
     
     // Processamento
-
+    if (!isNaN(nota)){
+        if ((nota>9)&&(nota<10)){
+            alert("Nota A")
+        }
+        else if((nota>8)&&(nota<9)){
+            alert("Nota B")
+        }
+        else if((nota>7)&&(nota<8)){
+            alert("Nota C")
+        }
+        else if((nota>6)&&(nota<7)){
+            alert("Nota D")
+        }
+        else{
+            alert("Nota E")
+        }
+    }
     
     // Saída
 

@@ -15,12 +15,36 @@
     */
 
     //ENTRADA
-
+    const com = prompt("Qual foi a quantidade?").trim()
+    const tipo = prompt("Qual o tipo de gasolina?A-alcool,G-gasolina").trim().toLocaleUpperCase()
 
     //PROCESSAMENTO
 
     
     //SAÍDA
-
+    if(isNaN(tipo)&&!isNaN(com)){
+        if(tipo==="A"){
+            if(com>20){
+                let valor = Number(com * 6.1 -((com * 6.1) * 0.05))
+                alert(`O valor pago deve ser ${valor}`)
+            }
+            else if(com<=20){
+                let valor = Number(com * 6.1 -((com * 6.1) * 0.03))
+            }
+        }
+        else{
+            if(com>20){
+                let valor = Number(com * 6.5 -((com * 6.5) * 0.06))
+                alert(`O valor pago deve ser ${valor}`)
+            }
+            else if(com<=20){
+                let valor = Number(com * 6.5 -((com * 6.5) * 0.04))
+                alert(`O valor pago deve ser ${valor}`)
+            }
+        }
+    }
+    else{
+        alert("Valor invalido")
+    }
 
 </script>
