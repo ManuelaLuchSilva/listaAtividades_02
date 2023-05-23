@@ -13,32 +13,32 @@
     //PROCESSAMENTO
     
     //SAÍDA
-    if(!isNaN(n1)&& !isNaN(n2)&& !isNaN(n3)){
-        if(n1==n2&& n1==n3){
+ 
+        if((n1 == n2) && (n1==n3)){
             alert("Informe números diferentes")
         }
-        else if(n1>n2&&n2>n3){
+        else if((n1>n2)&&(n2>n3)){
             alert(`${n1}, ${n2}, ${n1}`)
         }
-        else if(n1>n3&&n3>n2){
+        else if((n1>n3)&&(n3>n2)){
             alert(`${n1}, ${n3}, ${n2}`)
         }
-        else if(n2>n1&&n1>n3){
+        else if((n2>n1)&&(n1>n3)){
             alert(`${n2}, ${n1}, ${n3}`)
         }
-        else if(n2>n3&&n3>n1){
+        else if((n2>n3)&&(n3>n1)){
             alert(`${n2}, ${n3}, ${n1}`)
         }
-        else if(n3>n1&&n1>n2){
+        else if((n3>n1)&&(n1>n2)){
             alert(`${n3}, ${n1}, ${n2}`)
         }
-        else if(n3>n2&&n2>n1){
+        else if((n3>n2)&&(n2>n1)){
             alert(`${n3}, ${n2}, ${n1}`)
         }
-        else if(n1==n2||n2==n3||n3==n1){
+        else if((n1==n2)||(n2==n3)||(n3==n1)){
             alert(`Tem números iguais, por fovor troque!!`)
         }
-    }
+   
     else {
         alert("Tem algarismos que não são números, coloque NÚMEROS!!")
     }

@@ -12,7 +12,24 @@
     const altura = prompt("Qual sua altura").trim().replace(",",".")
     
     // Processamento
-
+    if((!isNaN(peso))&&(!isNaN(altura))){
+        let imc = peso+ altura /2
+        if(imc <= 18.5){
+            alert("Subpeso")
+        }
+        else if(imc <=25){
+            alert("Normal")
+        }
+        else if(imc <=30){
+            alert("Sobrepeso")
+        }
+        else if(imc > 30){
+            alert("Obeso")
+        }
+    }
+    else{
+        alert("Valor invalido")
+    }
     
     // Saída
 
