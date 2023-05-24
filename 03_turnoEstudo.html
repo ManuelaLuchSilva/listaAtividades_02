@@ -13,28 +13,23 @@
     */
 
     //ENTRADA
-    const horario = prompt("Em que turno você está?(M,V,N)").toUpperCase.trim
+    const horario = prompt("Em que turno você está?(M,V,N)").toUpperCase().trim()
     
     //PROCESSAMENTO
 
     
     //SAÍDA
-    if (isNaN(horario)){
-        if(horario === "M"){
-            alert("Bom dia!:)")
-        }
-        else if(horario==="V"){
-            alert("Boa tarde!:)")
-        }
-        else if(horario==="N"){
-            alert("Boa noite!:)")
-        }
-        else{
-            alert("Resposta invalida")
-        }
+    if(horario==="M"){
+        alert(`Bom dia`)
+    }
+    else if(horario==="V"){
+        alert(`Boa tarde`)
+    }
+    else if(horario==="N"){
+        alert(`Boa noite`)
     }
     else{
-        alert("Coloque letra!!")
+        alert(`Resposta invalida`)
     }
 
 </script>

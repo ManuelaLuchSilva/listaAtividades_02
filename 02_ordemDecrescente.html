@@ -6,41 +6,38 @@
     */
 
     //ENTRADA
-    const n1 = prompt("Insira um número:").trim
-    const n2 = prompt("Insira outro número:").trim
-    const n3 = prompt("Insira outro número:").trim
+    const n1 = Number(prompt("Insira um número:")).trim
+    const n2 = Number(prompt("Insira outro número:")).trim
+    const n3 = Number(prompt("Insira outro número:")).trim
 
     //PROCESSAMENTO
     
     //SAÍDA
- 
-        if((n1 == n2) && (n1==n3)){
-            alert("Informe números diferentes")
-        }
-        else if((n1>n2)&&(n2>n3)){
-            alert(`${n1}, ${n2}, ${n1}`)
-        }
-        else if((n1>n3)&&(n3>n2)){
-            alert(`${n1}, ${n3}, ${n2}`)
-        }
-        else if((n2>n1)&&(n1>n3)){
-            alert(`${n2}, ${n1}, ${n3}`)
-        }
-        else if((n2>n3)&&(n3>n1)){
-            alert(`${n2}, ${n3}, ${n1}`)
-        }
-        else if((n3>n1)&&(n1>n2)){
-            alert(`${n3}, ${n1}, ${n2}`)
-        }
-        else if((n3>n2)&&(n2>n1)){
-            alert(`${n3}, ${n2}, ${n1}`)
-        }
-        else if((n1==n2)||(n2==n3)||(n3==n1)){
-            alert(`Tem números iguais, por fovor troque!!`)
-        }
-   
-    else {
-        alert("Tem algarismos que não são números, coloque NÚMEROS!!")
+    if ((n1>n2)&&(n2>n3)){
+        alert(`${n1},${n2},${n3}`)
     }
+    else if ((n1>n3)&&(n3>n2)){
+        alert(`${n1},${n3},${n2}`)
+    }
+    else if ((n2>n1)&&(n1>n3)){
+        alert(`${n2},${n1},${n3}`)
+    }
+    else if ((n2>n3)&&(n3>n1)){
+        alert(`${n2},${n3},${n1}`)
+    }
+    else if ((n3>n1)&&(n1>n2)){
+        alert(`${n3},${n1},${n2}`)
+    }
+    else if ((n3>n2)&&(n2>n1)){
+        alert(`${n3},${n2},${n1}`)
+    }
+    else if ((n1==n2)||(n1==n3)){
+        alert(`Valores iguais, troque`)
+    }
+    else {
+        alert(`Se tem valores iguais, troque`)
+    }
+
+    
     
 </script>

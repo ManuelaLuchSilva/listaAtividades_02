@@ -4,27 +4,30 @@
     // Receba os três lados de um triângulo. Informe se os valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno. Dica: pesquise sobre a regra para saber se os lados formam um triângulo e também sobre os tipos de triângulos.
 
     //Entrada
-    const n1 = prompt("Coloque uma medida").trim
-    const n2 = prompt("Coloque outra medida").trim
-    const n3 = prompt("Coloque outra medida").trim
+    const n1 = Number(prompt("Coloque uma medida")).trim
+    const n2 = Number(prompt("Coloque outra medida")).trim
+    const n3 = Number(prompt("Coloque outra medida")).trim
 
+    const n12 = n1 + n2
+    const n13 = n1 + n3
+    const n23 = n2 + n3
     //Processamento
-    if ((n1+n2>n3)&&(n2+n3>n1)&&(n1+n3>n2)){
-        if ((n1===n2) && (n2===n3)){
-            alert("É um triangulo equilatero")
-        }
-        else if((n1==n2)||(n1==n3)||(n2==n3)){
-            alert("É um triangulo isoceles")
-        }
-        else if((n1!=n2)&&(n2!=n3)&&(n3!=n1)) {
-            alert("É um triangulo escaleno")
-        }
-        else{
-            alert("Não se encaixa em nenhum triangulo")
-        }
+
+    if(!isNaN(n1)||isNaN(n2||isNaN(n3))){
+        alert("Nao é um numero")
     }
-    else {
-        alert("Coloque apenas numeros")
+    else if ((n1===n2) && (n2===n3)){
+        alert("É um triangulo equilatero")
     }
+    else if((n1==n2)||(n1==n3)||(n2==n3)){
+        alert("É um triangulo isoceles")
+    }
+    else if((n1!=n2)&&(n2!=n3)&&(n3!=n1)) {
+        alert("É um triangulo escaleno")
+    }
+    else{
+        alert("Valor invalido")
+    }
+    
     //Saída
 </script>

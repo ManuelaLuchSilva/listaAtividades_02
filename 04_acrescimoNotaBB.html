@@ -4,17 +4,22 @@
 
     // entrada
     const notaAntes = Number(prompt("Qual sua nota?")).toFixed(1).replace(",",".")
-    const nota = Number(notaAntes + (notaAntes/4))
+    const notaNova = Number(prompt("Qual sua nova nota?")).replace(",",".")
+
+    const nota = (notaNova-notaAntes)*0.25
     
     // processamento
 
     
     // saída
-    if(isNaN(notaAntes)){
+    if(isNaN(notaAntes)||(isNaN(notaNova))){
         alert("INFORME UM NÚMERO")
     }
+    else if (nota<notaAntes){
+        alert(`O aluno não aumentou a nota`)
+    }
     else{
-        alert(`Sua nota pode ser ${nota.replace(".",",")}`)
+        alert(`O acrescimo de nota é de ${nota.replace(".",",")}`)
     }
 
 </script>

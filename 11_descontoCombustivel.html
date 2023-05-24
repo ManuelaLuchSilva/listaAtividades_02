@@ -25,22 +25,22 @@
     if(isNaN(tipo)&&!isNaN(quan)){
         if(tipo==="A"){
             if(quan>20){
-                let valor = Number(quan * 6.1 -((quan * 6.1) * 0.05))
-                alert(`O valor pago deve ser ${valor}`)
+                const valor = Number(quan * 6.1 -((quan * 6.1) * 0.05))
+                alert(`O valor pago deve ser ${valor.toFixed(2).replace(".",",")}`)
             }
             else if(quan<=20){
-                let valor = Number(quan * 6.1 -((quan * 6.1) * 0.03))
-                alert(`O valor pago deve ser de ${valor}`)
+                const valor = Number(quan * 6.1 -((quan * 6.1) * 0.03))
+                alert(`O valor pago deve ser de ${valor.toFixed(2).replace(".",",")}`)
             }
         }
         else{
             if(quan>20){
-                let valor = Number(quan* 6.5 -((quan * 6.5) * 0.06))
-                alert(`O valor pago deve ser ${valor}`)
+                const valor = Number(quan* 6.5 -((quan * 6.5) * 0.06))
+                alert(`O valor pago deve ser ${valor.toFixed(2).replace(".",",")}`)
             }
             else if(quan<=20){
-                let valor = Number(quan * 6.5 -((quan * 6.5) * 0.04))
-                alert(`O valor pago deve ser ${valor}`)
+                const valor = Number(quan * 6.5 -((quan * 6.5) * 0.04))
+                alert(`O valor pago deve ser ${valor.toFixed(2).replace(".",",")}`)
             }
         }
     }
