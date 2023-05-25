@@ -6,38 +6,38 @@
     */
 
     //ENTRADA
-    const n1 = Number(prompt("Insira um número:")).trim
-    const n2 = Number(prompt("Insira outro número:")).trim
-    const n3 = Number(prompt("Insira outro número:")).trim
+    const num1 = Number(prompt("Insira um número:"))
+    const num2 = Number(prompt("Insira outro número:"))
+    const num3 = Number(prompt("Insira outro número:"))
 
+    
     //PROCESSAMENTO
+    if(num1 === num2 || num1 === num3 || num2 == num3){
+        alert(`Coloque números diferentes`)
+    }
+    else if(num1 > num2 && num2 > num3){
+        alert(`${num1}, ${num2}, ${num3}`)
+    }
+    else if(num2 > num1 && num1 > num3){
+        alert(`${num2}, ${num1}, ${num3}`)
+    }
+    else if(num3 > num1 && num1 > num2){
+        alert(`${num3}, ${num1}, ${num2}`)
+    }
+    else if(num1 > num3 && num3 > num2){
+        alert(`${num1}, ${num3}, ${num2}`)
+    }
+    else if(num2 > num3 && num3 > num1){
+        alert(`${num2}, ${num3}, ${num1}`)
+    }
+    else if(num3 > num2 && num2 > num1){
+        alert(`${num3}, ${num2}, ${num1}`)
+    }
+    else{
+        alert("Valor invalido!!")
+    }
+
     
     //SAÍDA
-    if ((n1>n2)&&(n2>n3)){
-        alert(`${n1},${n2},${n3}`)
-    }
-    else if ((n1>n3)&&(n3>n2)){
-        alert(`${n1},${n3},${n2}`)
-    }
-    else if ((n2>n1)&&(n1>n3)){
-        alert(`${n2},${n1},${n3}`)
-    }
-    else if ((n2>n3)&&(n3>n1)){
-        alert(`${n2},${n3},${n1}`)
-    }
-    else if ((n3>n1)&&(n1>n2)){
-        alert(`${n3},${n1},${n2}`)
-    }
-    else if ((n3>n2)&&(n2>n1)){
-        alert(`${n3},${n2},${n1}`)
-    }
-    else if ((n1==n2)||(n1==n3)){
-        alert(`Valores iguais, troque`)
-    }
-    else {
-        alert(`Se tem valores iguais, troque`)
-    }
-
-    
     
 </script>

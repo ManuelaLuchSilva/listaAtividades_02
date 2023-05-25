@@ -13,7 +13,7 @@
     
     // Processamento
     if((!isNaN(peso))&&(!isNaN(altura))){
-        let imc = peso/altura
+        let imc = peso/(altura*altura)
         if(imc <= 18.5){
             alert("Subpeso")
         }

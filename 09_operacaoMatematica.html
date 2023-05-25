@@ -9,10 +9,73 @@
     */
 
     //ENTRADA
+    const num1 = Number(prompt("Qual o primeiro valor?"));
+    const opera = prompt("Qual a operaçao?(+,-,/,*)");
+    const num2 = Number(prompt("Qual o segundo valor?"));
     
 
     //PROCESSAMENTO
-
+    if(opera=="+"){
+        const resul = num1 + num2
+        alert(${resul})
+        if(resul%2==0){
+            alert("Par")
+        }
+        else {
+            alert("Impar")
+        }
+        if(resul>=0){
+            alert("Positivo")
+        }
+        else{
+            alert("")
+        }
+    }
+    else if(opera=="-"){
+        const resul = num1 - num2
+        
+    }
+    else if(opera=="*"){
+        const resul = num1 * num2
+        
+    }
+    else if(opera=="/"){
+        const resul = num1 / num2
+        if(resul%2==0){
+            if (resul>=0){
+                if((resul%1)=0){
+                    alert(`${resul},par,positivo,inteiro`)
+                }
+               else{
+                alert(`${resul},par,positivo,decimal`)
+               } 
+            }
+            else{
+                if((resul%1)=0){
+                    alert(`${resul},par,negativo,inteiro`)
+                }
+               else{
+                alert(`${resul},par,negativo,decimal`)
+               } 
+            }
+        } else {
+            if((resul%1)=0){if(resul%2==0){
+                alert(`${resul},par`);
+            } else {
+                alert(`${resul},impar`);
+            }
+            if((resul%1)=0){
+                alert(`${resul},par,negativo,inteiro`)
+            }
+           else{
+            alert(`${resul},par,negativo,decimal`)
+           } 
+           } 
+        }
+    }
+    else{
+        alert("Resposta invalida")
+    }/*
     
     //SAÍDA
 
