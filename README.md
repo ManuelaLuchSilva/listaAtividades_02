@@ -110,3 +110,26 @@ Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte cr
 Faça um script que pergunte para a pessoa em qual hemisfério ela está e qual o mês atual.
 
 De acordo com as respostas, informe qual a estação do ano correspondente.
+
+mensagemFinal = mensagemFinal + resul + ", é"
+        if(resul%2==0){
+            mensagemFinal = mensagemFinal + "par" 
+        }
+        else {
+            mensagemFinal = mensagemFinal + "impar"
+        }
+        mensagemFinal = mensagemFinal + ", é"
+        if(resul>=0){
+            mensagemFinal = mensagemFinal + "positivo"
+        }
+        else{
+            mensagemFinal = mensagemFinal + "negativo"
+        }
+        mensagemFinal = mensagemFinal + ", é"
+        if((resul%1)=0){
+            mensagemFinal = mensagemFinal + "inteiro"
+        }
+        else{
+            mensagemFinal = mensagemFinal + "decimal"
+        }
+        mensagemFinal = mensagemFinal + ",é"

@@ -17,7 +17,7 @@
     //PROCESSAMENTO
     if(opera=="+"){
         const resul = num1 + num2
-        alert(${resul})
+        alert(`${resul}`)
         if(resul%2==0){
             alert("Par")
         }
@@ -28,54 +28,84 @@
             alert("Positivo")
         }
         else{
-            alert("")
+            alert("negativo")
+        }
+        if((resul%1)=0){
+            alert("inteiro")
+        }
+        else{
+            alert("decimal")
         }
     }
     else if(opera=="-"){
         const resul = num1 - num2
-        
+        alert(`${resul}`)
+        if(resul%2==0){
+            alert("Par")
+        }
+        else {
+            alert("Impar")
+        }
+        if(resul>=0){
+            alert("Positivo")
+        }
+        else{
+            alert("negativo")
+        }
+        if((resul%1)=0){
+            alert("inteiro")
+        }
+        else{
+            alert("decimal")
+        }
     }
     else if(opera=="*"){
         const resul = num1 * num2
-        
+        alert(`${resul}`)
+        if(resul%2==0){
+            alert("Par")
+        }
+        else {
+            alert("Impar")
+        }
+        if(resul>=0){
+            alert("Positivo")
+        }
+        else{
+            alert("negativo")
+        }
+        if((resul%1)=0){
+            alert("inteiro")
+        }
+        else{
+            alert("decimal")
+        }
     }
     else if(opera=="/"){
         const resul = num1 / num2
+        alert(`${resul}`)
         if(resul%2==0){
-            if (resul>=0){
-                if((resul%1)=0){
-                    alert(`${resul},par,positivo,inteiro`)
-                }
-               else{
-                alert(`${resul},par,positivo,decimal`)
-               } 
-            }
-            else{
-                if((resul%1)=0){
-                    alert(`${resul},par,negativo,inteiro`)
-                }
-               else{
-                alert(`${resul},par,negativo,decimal`)
-               } 
-            }
-        } else {
-            if((resul%1)=0){if(resul%2==0){
-                alert(`${resul},par`);
-            } else {
-                alert(`${resul},impar`);
-            }
-            if((resul%1)=0){
-                alert(`${resul},par,negativo,inteiro`)
-            }
-           else{
-            alert(`${resul},par,negativo,decimal`)
-           } 
-           } 
+            alert("Par")
+        }
+        else {
+            alert("Impar")
+        }
+        if(resul>=0){
+            alert("Positivo")
+        }
+        else{
+            alert("negativo")
+        }
+        if((resul%1)=0){
+            alert("inteiro")
+        }
+        else{
+            alert("decimal")
         }
     }
     else{
         alert("Resposta invalida")
-    }/*
+    }
     
     //SAÍDA
 

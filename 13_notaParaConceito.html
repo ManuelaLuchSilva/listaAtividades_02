@@ -9,29 +9,28 @@
     // Entre 5.9 e zero            E
 
     // Entrada
-    const nota1 = Number(prompt("Qual foi sua nota")).trim()
+    const nota = Number(prompt("Qual foi sua nota")).trim()
 
     // Processamento
+    if(nota>=10 && nota<=9){
+        alert("A")
+    }
+    else if(nota<9 && nota>=8){
+        alert("B")    
+    }
+    else if(nota<8 && nota>=7){
+        alert("C")    
+    }
+    else if(nota<7 && nota>=6){
+        alert("D")    
+    }
+    else if(nota<6 && nota>=0){
+        alert("E")    
+    }
+    else{
+        alert("Valor invalido")
+    }
 
-    
-        if ((nota1<=10)&&(nota1>=9)){
-            alert("Nota A")
-        }
-        else if((nota1<9)&&(nota1>=8)){
-            alert("Nota B")
-        }
-        else if((nota1<"8")&&(nota1>="7")){
-            alert("Nota C")
-        }
-        else if((nota1<7)&&(nota1>=6)){
-            alert("Nota D")
-        }
-        else{
-            alert("Nota E")
-        }
-    
-    
-    
     // Saída
 
 </script>
