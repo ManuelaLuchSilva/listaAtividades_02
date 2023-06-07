@@ -12,101 +12,102 @@
     const num1 = Number(prompt("Qual o primeiro valor?"));
     const opera = prompt("Qual a operaçao?(+,-,/,*)");
     const num2 = Number(prompt("Qual o segundo valor?"));
-    
+    let mensagem = `O resultado `
 
     //PROCESSAMENTO
     if(opera=="+"){
         const resul = num1 + num2
-        alert(`${resul}`)
+        mensagem = mensagem + resul + `, `
         if(resul%2==0){
-            alert("Par")
+            mensagem = mensagem + `par, `
         }
         else {
-            alert("Impar")
+            mensagem = mensagem + `impar, `
         }
         if(resul>=0){
-            alert("Positivo")
+            mensagem = mensagem + `positivo, `
         }
         else{
-            alert("negativo")
+            mensagem = mensagem + `negativo, `
         }
-        if((resul%1)=0){
-            alert("inteiro")
+        if(resul%1==0){
+            mensagem = mensagem + `inteito.`
         }
         else{
-            alert("decimal")
+            mensagem = mensagem + `decimal`
         }
     }
     else if(opera=="-"){
         const resul = num1 - num2
-        alert(`${resul}`)
+        mensagem = mensagem + resul + ", "
         if(resul%2==0){
-            alert("Par")
+            mensagem = mensagem + `par, `
         }
         else {
-            alert("Impar")
+            mensagem = mensagem + `impar, `
         }
         if(resul>=0){
-            alert("Positivo")
+            mensagem = mensagem + `positivo, `
         }
         else{
-            alert("negativo")
+            mensagem = mensagem + `negativo, `
         }
-        if((resul%1)=0){
-            alert("inteiro")
+        if(resul%1==0){
+            mensagem = mensagem + `inteito.`
         }
         else{
-            alert("decimal")
+            mensagem = mensagem + `decimal`
         }
     }
     else if(opera=="*"){
         const resul = num1 * num2
-        alert(`${resul}`)
+        mensagem = mensagem + resul + ", "
         if(resul%2==0){
-            alert("Par")
+            mensagem = mensagem + `par, `
         }
         else {
-            alert("Impar")
+            mensagem = mensagem + `impar, `
         }
         if(resul>=0){
-            alert("Positivo")
+            mensagem = mensagem + `positivo, `
         }
         else{
-            alert("negativo")
+            mensagem = mensagem + `negativo, `
         }
-        if((resul%1)=0){
-            alert("inteiro")
+        if(resul%1==0){
+            mensagem = mensagem + `inteito.`
         }
         else{
-            alert("decimal")
+            mensagem = mensagem + `decimal`
         }
     }
     else if(opera=="/"){
         const resul = num1 / num2
-        alert(`${resul}`)
+        mensagem = mensagem + resul + ", "
         if(resul%2==0){
-            alert("Par")
+            mensagem = mensagem + `par, `
         }
         else {
-            alert("Impar")
+            mensagem = mensagem + `impar, `
         }
         if(resul>=0){
-            alert("Positivo")
+            mensagem = mensagem + `positivo, `
         }
         else{
-            alert("negativo")
+            mensagem = mensagem + `negativo, `
         }
-        if((resul%1)=0){
-            alert("inteiro")
+        if(resul%1==0){
+            mensagem = mensagem + `inteito.`
         }
         else{
-            alert("decimal")
+            mensagem = mensagem + `decimal`
         }
     }
     else{
-        alert("Resposta invalida")
+        mensagem = "Invalido!"
     }
-    
+    document.write(`${mensagem}`)
+
     //SAÍDA
 
 
