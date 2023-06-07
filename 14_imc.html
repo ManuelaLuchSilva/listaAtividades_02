@@ -11,7 +11,7 @@
     const peso = prompt("Qual seu peso").trim().replace(",",".")
     const altura = prompt("Qual sua altura").trim().replace(",",".")
     
-    // Processamento
+    // Processamento 
     if((!isNaN(peso))&&(!isNaN(altura))){
         let imc = peso/(altura*altura)
         if(imc <= 18.5){

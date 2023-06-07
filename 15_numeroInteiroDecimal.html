@@ -7,10 +7,18 @@
     */
 
     //ENTRADA
-    
-
+    const num = Number(prompt("Qual o número?").replace(",","."))
+    let dec = Math.ceil(num)
     //PROCESSAMENTO
-
+    if (num<dec){
+        alert("Decimal")
+    }
+    else if (num==dec){
+        alert("Inteiro")
+    }
+    else {
+        alert("resposta invalida")
+    }
     
     //SAÍDA
 

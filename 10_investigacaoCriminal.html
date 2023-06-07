@@ -12,16 +12,43 @@
     */
 
     //ENTRADA
-    alert("Responda as ")
-    const r1 = prompt("Telefonou para a vítima?").trim().toLowerCase()
-    const r2 = prompt("Esteve no local do crime?").trim().toLowerCase()
-    const r3 = prompt("Mora perto da vítima?").trim().toLowerCase()
-    const r4 = prompt("Devia para a vítima?").trim().toLowerCase()
-    const r5 = prompt("Já trabalhou com a vítima?").trim().toLowerCase()
+    alert("Responda as perguntas com S ou N!")
+    const r1 = prompt("Telefonou para a vítima?").toLowerCase();
+    const r2 = prompt("Esteve no local do crime?").toLowerCase();
+    const r3 = prompt("Mora perto da vítima?").toLowerCase();
+    const r4 = prompt("Devia para a vítima?").toLowerCase();
+    const r5 = prompt("Já trabalhou com a vítima?").toLowerCase();
 
     //PROCESSAMENTO
-    
+    let resposta = 0 
 
+    if (r1 == "s") {
+        resposta == resposta++
+    }
+    if (r2 == "s") {
+        resposta == resposta++;
+    }
+    if (r3 == "s") {
+        resposta == resposta++;
+    }
+    if (r4 == "s") {
+        resposta == resposta++; 
+    }
+    if (r5 == "s") {
+        resposta == resposta++;
+    }
+    if (resposta == 2) {
+        alert(`Suspeito`);
+    }
+    else if (resposta == 3 || resposta == 4) {
+        alert(`Cúmplice`);
+    }
+    else if (resposta == 5) {
+        alert(`Assasino`);
+    }
+    else  {
+        alert(`Inocente`);
+    }
 
     //SAÍDA
 
