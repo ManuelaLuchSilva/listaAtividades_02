@@ -7,10 +7,41 @@
     */
 
     //ENTRADA
-
+    const hemis = prompt("Qual o hemisferio?").trim().toLowerCase()
+    const mes = prompt("Qual o mês? Informe o mês em numero!!")
 
     //PROCESSAMENTO
-
+    if (hemis =="sul"){
+        if (mes >= 3 && mes<6){
+            alert("Outono")
+        }
+        else if (mes >=6 && mes<9 ){
+            alert("Inverno")
+        }
+        else if (mes >=9 && mes<12){
+            alert("Primavera")
+        }
+        else if (mes = 12 || mes<3 ){
+            alert("Verão")
+        }
+    }
+    else if( hemis =="norte"){
+        if (mes >= 3 && mes<6){
+            alert("Primavera")
+        }
+        else if (mes >=6 && mes<9 ){
+            alert("Verão")
+        }
+        else if (mes >=9 && mes<12){
+            alert("Outono")
+        }
+        else if (mes = 12 || mes<3 ){
+            alert("Inverno")
+        }
+    }
+    else{
+        alert("Resposta invalida!")
+    }
     
     //SAÍDA
 

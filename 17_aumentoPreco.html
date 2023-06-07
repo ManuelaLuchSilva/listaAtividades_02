@@ -7,9 +7,28 @@
         //- acima de 1500: aumento de 5 %
     
     // Entrada
-    
+    const preco = prompt("Qual o valor?").trim().replace(",",".")
     
     // Processamento
+    if (preco<=280){
+        let r = (preco-(preco * 0.2)).toFixed(2).replace(".",",")
+        alert(`R$${r}`) 
+    }
+    else if (preco<=700){
+        let r = (preco-(preco * 0.15)).toFixed(2).replace(".",",")
+        alert(`R$${r}`) 
+    }
+    else if (preco<=1500){
+        let r = (preco-(preco * 0.1)).toFixed(2).replace(".",",")
+        alert(`R$${r}`) 
+    }
+    else if(preco>1500){
+        let r = (preco-(preco * 0.05)).toFixed(2).replace(".",",")
+        alert(`R$${r}`) 
+    }
+    else{
+        alert("Resposta invalida!")
+    }
 
     
     // Saída
