@@ -7,10 +7,28 @@
     // - cães grandes: fator 7.
 
     // Entrada
-    
+    const porte = prompt("Qual o porte do cão?(pequeno,médio,grande)").toLowerCase().trim()
+    const idade = prompt("Qual a idade do cão?")
     
     // Processamento
-
+    if(!isNaN(porte)||isNaN(idade)){
+        alert("Resposta invalida!")
+    }
+    else if(porte==="pequeno"){
+        let n = idade * 5
+        alert(`Idade real é ${n}`)
+    }
+    else if(porte==="médio"||porte==="medio"){
+        let n = idade * 6
+        alert(`Idade real é ${n}`)
+    }
+    else if(porte==="grande"){
+        let n = idade * 7
+        alert(`Idade real é ${n}`)
+    }
+    else{
+        alert("Resposta não valida")
+    }
     
     // Saída
 

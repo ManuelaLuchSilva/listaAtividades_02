@@ -9,104 +9,108 @@
     */
 
     //ENTRADA
-    const num1 = Number(prompt("Qual o primeiro valor?"));
-    const opera = prompt("Qual a operaçao?(+,-,/,*)");
-    const num2 = Number(prompt("Qual o segundo valor?"));
-    let mensagem = `O resultado `
-
+    let num1 = Number(prompt("Informe um número .").replace(",", ".").trim()); 
+    const operacao = prompt("Qual a operação?(+,-,*,/)").trim().toLowerCase();
+    let num2 = Number(prompt("Informe outro número.").replace(",", ".").trim());
+    let mensagemFinal = `O resultado é `
     //PROCESSAMENTO
-    if(opera=="+"){
-        const resul = num1 + num2
-        mensagem = mensagem + resul + `, `
-        if(resul%2==0){
-            mensagem = mensagem + `par, `
+    if (isNaN(num1) || isNaN(num2)) {
+        alert(`Resposta invalida.`);
+    }
+    else {
+        if (operacao === "+") {
+            const num3 = num1 + num2;
+            mensagemFinal = mensagemFinal + `${num3}, sendo ele: `;
+            if (num3 % 2 == 0) {
+                mensagemFinal = mensagemFinal + ` par; `;
+            }
+            else {
+                mensagemFinal = mensagemFinal + `ímpar; `;
+            }
+            if (num3 % 1 === 0) {
+                mensagemFinal = mensagemFinal + `inteiro e `;
+            }
+            else {
+                mensagemFinal = mensagemFinal + `decimal e `;
+            }
+            if (num3 >= 0) {
+                mensagemFinal = mensagemFinal + `positivo.`;
+            }
+            else {
+                mensagemFinal = mensagemFinal + `negativo`;
+            }
+            document.write(mensagemFinal);
         }
-        else {
-            mensagem = mensagem + `impar, `
+        else if (operacao === "-") {
+            const num3 = num1 - num2;
+            mensagemFinal = mensagemFinal + `${num3}, ele é: `;
+            if (num3 % 2 == 0) {
+                mensagemFinal = mensagemFinal + ` par; `;
+            }
+            else {
+                mensagemFinal = mensagemFinal + `ímpar; `;
+            }
+            if (num3 % 1 === 0) {
+                mensagemFinal = mensagemFinal + `inteiro e `;
+            }
+            else {
+                mensagemFinal = mensagemFinal + `decimal e `;
+            }
+            if (num3 >= 0) {
+                mensagemFinal = mensagemFinal + `positivo.`;
+            }
+            else {
+                mensagemFinal = mensagemFinal + `negativo`;
+            }
+            document.write(mensagemFinal);
         }
-        if(resul>=0){
-            mensagem = mensagem + `positivo, `
+        else if (operacao === "/") {
+            const num3 = num1 / num2;
+            mensagemFinal = mensagemFinal + `${num3}, ele é: `;
+            if (num3 % 2 == 0) {
+                mensagemFinal = mensagemFinal + ` par; `;
+            }
+            else {
+                mensagemFinal = mensagemFinal + `ímpar; `;
+            }
+            if (num3 % 1 === 0) {
+                mensagemFinal = mensagemFinal + `inteiro e `;
+            }
+            else {
+                mensagemFinal = mensagemFinal + `decimal e `;
+            }
+            if (num3 >= 0) {
+                mensagemFinal = mensagemFinal + `positivo.`;
+            }
+            else {
+                mensagemFinal = mensagemFinal + `negativo`;
+            }
+            document.write(mensagemFinal);
         }
-        else{
-            mensagem = mensagem + `negativo, `
-        }
-        if(resul%1==0){
-            mensagem = mensagem + `inteito.`
-        }
-        else{
-            mensagem = mensagem + `decimal`
+        if (operacao === "*") {
+            const num3 = num1 * num2;
+            mensagemFinal = mensagemFinal + `${num3}, ele é: `;
+            if (num3 % 2 == 0) {
+                mensagemFinal = mensagemFinal + ` par; `;
+            }
+            else {
+                mensagemFinal = mensagemFinal + `ímpar; `;
+            }
+            if (num3 % 1 === 0) {
+                mensagemFinal = mensagemFinal + `inteiro e `;
+            }
+            else {
+                mensagemFinal = mensagemFinal + `decimal e `;
+            }
+            if (num3 >= 0) {
+                mensagemFinal = mensagemFinal + `positivo.`;
+            }
+            else {
+                mensagemFinal = mensagemFinal + `negativo`;
+            }
+            document.write(mensagemFinal);
         }
     }
-    else if(opera=="-"){
-        const resul = num1 - num2
-        mensagem = mensagem + resul + ", "
-        if(resul%2==0){
-            mensagem = mensagem + `par, `
-        }
-        else {
-            mensagem = mensagem + `impar, `
-        }
-        if(resul>=0){
-            mensagem = mensagem + `positivo, `
-        }
-        else{
-            mensagem = mensagem + `negativo, `
-        }
-        if(resul%1==0){
-            mensagem = mensagem + `inteito.`
-        }
-        else{
-            mensagem = mensagem + `decimal`
-        }
-    }
-    else if(opera=="*"){
-        const resul = num1 * num2
-        mensagem = mensagem + resul + ", "
-        if(resul%2==0){
-            mensagem = mensagem + `par, `
-        }
-        else {
-            mensagem = mensagem + `impar, `
-        }
-        if(resul>=0){
-            mensagem = mensagem + `positivo, `
-        }
-        else{
-            mensagem = mensagem + `negativo, `
-        }
-        if(resul%1==0){
-            mensagem = mensagem + `inteito.`
-        }
-        else{
-            mensagem = mensagem + `decimal`
-        }
-    }
-    else if(opera=="/"){
-        const resul = num1 / num2
-        mensagem = mensagem + resul + ", "
-        if(resul%2==0){
-            mensagem = mensagem + `par, `
-        }
-        else {
-            mensagem = mensagem + `impar, `
-        }
-        if(resul>=0){
-            mensagem = mensagem + `positivo, `
-        }
-        else{
-            mensagem = mensagem + `negativo, `
-        }
-        if(resul%1==0){
-            mensagem = mensagem + `inteito.`
-        }
-        else{
-            mensagem = mensagem + `decimal`
-        }
-    }
-    else{
-        mensagem = "Invalido!"
-    }
-    document.write(`${mensagem}`)
 
     //SAÍDA
 
